@@ -1,0 +1,334 @@
+/*1st Thinkful Prj Stylesheet*/
+
+/* reset modified from Eric Meyer's Reset
+*/
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+a {
+	text-decoration:none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/*custome Styles*/
+
+h1 {
+	font-size:3.2em;
+	font-weight: lighter;
+	line-height:1.6em;
+}
+
+h2 {
+	font-size:2.4em;
+	line-height:1.6em;
+}
+
+h3 {
+	font-size:1.1em;
+	line-height: 1.4em;
+	font-weight: bold;
+}
+strong {
+	font-weight:bold;
+}
+.content {
+  box-sizing: border-box;
+  padding:0 15px;
+  margin: 0 auto;
+  width:990px;
+}
+
+
+
+/* Navigation Section */
+
+.top-navigation {
+    background-color: #fff;
+    height: 70px;
+    margin: 0 auto;
+}
+
+    
+
+.logo {
+	margin-left: -9.9em;
+	margin-top: 0.306em;
+}
+
+.top-navigation  .links {
+	float:right;
+	margin-top:2.1em;
+}
+
+.top-navigation > .links > li {
+	float:left;
+	display:inline-block;
+	padding: 0px 15px;
+	margin-top:-0.4em;
+}
+
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 600;
+}
+.top-navigation .links li:hover {
+	cursor:pointer;
+	-webkit-box-shadow: 1px 1px 1px #333;
+	padding:3px 15px;
+	background-color:blue;
+	color:white;
+}
+
+/*Banner Section*/
+
+.banner {
+	background: url('../img/first-background.jpg');
+	height:736px;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	-webkit-background-size: cover;
+	padding: 5em 25em;
+	background-position: center bottom;
+	-webkit-background-position: center bottom;
+	background-position-x: 50%;
+	background-position-y: 100%;
+}
+.banner-text {
+	padding:20px;
+	margin-left:5em;
+	/*background-color: rgba(245, 245, 245, 0.4);
+	border: 0.1em solid rgba(150, 150, 150, 0.1);
+	border-radius:6px;*/
+	text-align:center;
+	margin-top:16em;
+	overflow: auto;
+	color:white;
+}
+
+.banner-text a {
+	color:white;
+}
+
+
+.introtext {
+	line-height: 2.7em;
+
+}
+.introtext h1 {
+	font-size: 3em;
+}
+
+.introtext .introline {
+	font-size:1.3em;
+}
+
+.half {
+	display:inline;
+}
+
+.video-about{
+	display: inline;
+	margin-left: 1.2em;
+}
+
+.icon-play{
+	margin-top:1.2em;
+}
+.buton {
+	background-color: #00B297;
+	color:white;
+	text-align:center;
+	font-size:1em;
+	font-weight: bold;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+}
+
+.buton:hover {
+	background-color: #00AB90;
+}
+
+.video-about {
+
+}
+
+.go-down > i {
+	margin:0 auto;
+	color:white;
+	transition: 300ms ease-out;
+	transition-property: initial;
+	transition-duration: 300ms;
+	transition-timing-function: ease-out;
+	transition-delay: initial;
+	-webkit-transition: 300ms ease-out;
+	-webkit-transition-property: initial;
+	-webkit-transition-duration: 300ms;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-delay: initial;
+	-webkit-animation: exploreBounce 0.85s ease-in-out infinite alternate;
+	-webkit-animation-name: exploreBounce;
+	-webkit-animation-duration: 0.85s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-delay: initial;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: initial;
+	-webkit-animation-play-state: initial;
+}
+
+/*Page 2*/
+
+#cases-title{
+	text-align:center;
+	font-size:3.2em;
+	margin:0.4em;
+	font-weight:lighter;
+	margin-top:2em;
+}
+
+.devices {
+    width: 33.2333333%;
+    display: inline-block;
+    /* styles to assist with debugging
+    border: 1px solid black;*/
+    box-sizing: border-box;
+    padding:0.7em;
+    margin:2em 0;
+}
+
+/*3rd section*/
+
+.signup{
+	background: url('../img/buy-now-bg.jpg');
+	height:450px;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	-webkit-background-size: cover;
+	padding: 5em 25em;
+	background-position: center bottom;
+	-webkit-background-position: center bottom;
+	background-position-x: 50%;
+	background-position-y: 100%;
+}
+
+#signup-desc{
+	width:600px;
+	margin:3em 6em;
+	line-height:1.6em;
+	color:black;
+
+}
+
+/*Footer*/
+.social {
+	background-color:#B23400;
+	margin:0 auto;
+	text-align:center;
+}
+
+.icons li {
+	display:inline-block;
+	padding: 2.5em 0;
+
+}
+
+.icons li i {
+	margin:0 0.6em;
+	background-color:#838994;
+	color:white;
+	border:0.1em solid #838994;
+	border-radius:50%;
+	padding:0.4em;
+	width:60px;
+	text-align:center;
+
+}
+
+.copyrt {
+	text-align:center;
+	margin-bottom:0.3em;
+}
+
+.social .content h2 {
+	font-size:2.1em;
+	margin-top:10px;
+	position:relative;
+	line-height: 0.4em;
+	font-weight:bold;
+	top:0.7em;
+	left:0.2em;
+}
